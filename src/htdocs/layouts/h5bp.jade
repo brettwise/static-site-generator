@@ -9,8 +9,8 @@ html.no-js(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='apple-touch-icon', href='apple-touch-icon.png')
     // Place favicon.ico in the root directory
-    link(rel='stylesheet', href='main.css')
-    script(src='js/vendor/modernizr-2.8.3.min.js')
+    link(rel='stylesheet', href='css/main.css')
+    script(src='js/modernizr-2.8.3.min.js')
     block scripts
   body
     //if lt IE 8
@@ -24,8 +24,7 @@ html.no-js(lang='en')
     block content 
     script(src='//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js')
     script.
-      window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\\/script>')
-    script(src='js/plugins.js')
+      window.jQuery || document.write('<script src="js/jquery-{{JQUERY_VERSION}}.min.js"><\\/script>')
     script(src='js/main.js')
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
     script.

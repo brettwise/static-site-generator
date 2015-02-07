@@ -1,4 +1,4 @@
-var dest = "./build";
+var dest = './build';
 var src = './src';
 
 module.exports = {
@@ -9,23 +9,23 @@ module.exports = {
     }
   },
   sass: {
-    src: src + "/sass/*.{sass,scss}",
-    dest: dest,
+    src: src + '/sass/*.{sass,scss}',
+    dest: dest + '/css',
     settings: {
       indentedSyntax: true, // Enable .sass syntax!
       imagePath: 'images' // Used by the image-url helper
     }
   },
   images: {
-    src: src + "/images/**",
-    dest: dest + "/images"
+    src: src + '/images/**',
+    dest: dest + '/images'
   },
   markup: {
-    src: src + "/htdocs/**/*(!(*.jade|*.src|*map|layouts))",
+    src: src + '/htdocs/**/*(!(*.jade|*.src|*map|layouts))',
     dest: dest
   },
   jade: {
-    src: src + "/htdocs/*.jade",
+    src: src + '/htdocs/*.jade',
     dest: dest
   },
   iconFonts: {
@@ -47,8 +47,8 @@ module.exports = {
     // A separate bundle will be generated for each
     // bundle config in the list below
     bundleConfigs: [{
-      entries: src + '/javascript/global.coffee',
-      dest: dest,
+      entries: src + '/js/global.coffee',
+      dest: dest + '/js',
       outputName: 'global.js',
       // Additional file extentions to make optional
       extensions: ['.coffee', '.hbs'],
@@ -57,9 +57,9 @@ module.exports = {
       // See https://github.com/greypants/gulp-starter/issues/87 for note about
       // why this is 'backbone/node_modules/underscore' and not 'underscore'
     }, {
-      entries: src + '/javascript/page.js',
-      dest: dest,
-      outputName: 'page.js',
+      entries: src + '/js/main.js',
+      dest: dest + '/js',
+      outputName: 'main.js',
       // list of externally available modules to exclude from the bundle
       external: ['jquery', 'underscore']
     }]
