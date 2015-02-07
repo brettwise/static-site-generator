@@ -21,11 +21,11 @@ module.exports = {
     dest: dest + "/images"
   },
   markup: {
-    src: src + "/htdocs/**/*(!(*.jade|*.src|*map))",
+    src: src + "/htdocs/**/*(!(*.jade|*.src|*map|layouts))",
     dest: dest
   },
   jade: {
-    src: src + "/htdocs/**/*.jade",
+    src: src + "/htdocs/*.jade",
     dest: dest
   },
   iconFonts: {
