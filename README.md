@@ -1,3 +1,5 @@
+This is the branch where I’m trying to add in scss linting per http://sass-guidelin.es/. I have stashed changes with the scss-lint npm package installed and inserted into sass.js for gulp but it keeps erroring out. Don’t know why. Do git stash apply to retreive changes.
+
 gulp-starter
 ============
 
