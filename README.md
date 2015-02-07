@@ -1,8 +1,29 @@
-This is the branch where I’m trying to add in scss linting per http://sass-guidelin.es/. I have stashed changes with the scss-lint npm package installed and inserted into sass.js for gulp but it keeps erroring out. Don’t know why. Do git stash apply to retreive changes.
-
-gulp-starter
+H5BP/Jade/Sass Best Practices/gulp-starter
 ============
 
+# What is this?
+This combines [html5boilerplate](https://github.com/h5bp/html5-boilerplate), [jade](https://github.com/jadejs/jade)-[gulp](https://www.npmjs.com/package/gulp-jade) mostly for templating, and Sass linting from [sass-guidelin.es](http://sass-guidelin.es/#scss-lint). All a top of the wonderous [gulp-starter](https://github.com/greypants/gulp-starter) from someone called greypants. It takes the best of everything.
+
+## tldr or just tell me how to get going with this damn thing.
+alright already.
+
+    $ npm install
+    $ gulp
+
+## brett’s rationale for creating this
+I wanted something minimal and something that allowed me to use partials. I thought about a static site generator like Jekyll but in the end it was way more than I wanted. I just wanted partials. So I ended up settling on Jade for that purpose.
+
+### To-Do
+- [ ] Add in SCSS linter - https://www.npmjs.com/package/gulp-scss-lint
+- [ ] Add Rules from Sass-Guidelines to above linter - http://sass-guidelin.es/#scss-lint
+- [x] Change Sass files to Scss file & Rename Folder
+- [ ] Add in base bower config with things like normalize.scss & modernizr.
+- [ ] Possibly add support for Sassdoc. - http://sassdoc.com/
+
+### Branch Guide
+sass-i-mean-scss-linting: This is the branch where I’m trying to add in scss linting per http://sass-guidelin.es/. I have stashed changes with the scss-lint npm package installed and inserted into sass.js for gulp but it keeps erroring out. Don’t know why. Do git stash apply to retreive changes.
+
+## gulp-starter readme
 Starter Gulp + Browserify project with examples of how to accomplish some common tasks and workflows. Read the [blog post](http://viget.com/extend/gulp-browserify-starter-faq) for more context, and check out the [Wiki](https://github.com/greypants/gulp-starter/wiki) for some good background knowledge.
 
 Includes the following tools, tasks, and workflows:
