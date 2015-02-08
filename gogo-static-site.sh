@@ -5,7 +5,7 @@ read sitename
 echo "Cool hang tight. This might take a few seconds."
 (cd ..; mv jade-bower-h5bp-scss-linter-gulp-starter $sitename)
 echo "Folder renamed."
-echo '\n' 'build' '\n' 'y' '\n' '404.html' '\n' 'y' '\n' | divshot init
+sleep 1 && echo '\n' 'build' '\n' 'y' '\n' '404.html' '\n' 'y' '\n' | divshot init
 echo "divshot site initialized"
 rm -rf .git
 echo "Git repo removed."
