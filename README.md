@@ -13,17 +13,29 @@ alright already.
 
 #### That bash script keeps you from having type all these.
 
-	$ git clone git@github.com:brettwise/jade-bower-h5bp-scss-linter-gulp-starter.git
-	$ cd jade-bower-h5bp-scss-linter-gulp-starter
-    $ npm install
-    $ cd src/sass
-    $ bower install
-    $ cd ..
-    $ cd js
-    $ bower install
-    $ cd ../..
-    $ gulp
-    $ subl .
+```
+echo "Type the name of your site without the .com This will rename the folder you're in and be used in the first git commit:"
+read sitename
+echo "Cool hang tight. This might take a few seconds."
+(cd ..; mv jade-bower-h5bp-scss-linter-gulp-starter $sitename)
+echo "Folder renamed."
+echo '\n' 'build' '\n' 'y' '\n' '404.html' '\n' 'y' '\n' | divshot init
+echo "divshot site initialized"
+rm -rf .git
+echo "Git repo removed."
+git init
+echo "New git repo initialized."
+git add -A
+git commit -m "Initial commit for $sitename"
+npm install
+echo "npm packages installed."
+(cd src/sass;bower install)
+echo "Sass related Bower packages installed."
+(cd src/js;bower install)
+echo "JS related Bower packages installed."
+subl .
+gulp
+```
 
 ## brett’s rationale for creating this
 I wanted something minimal and something that allowed me to use partials. I thought about a static site generator like Jekyll but in the end it was way more than I wanted. I just wanted partials. So I ended up settling on Jade for that purpose.
@@ -32,8 +44,9 @@ I wanted something minimal and something that allowed me to use partials. I thou
 - [ ] Add in SCSS linter - https://www.npmjs.com/package/gulp-scss-lint
 - [ ] Add Rules from Sass-Guidelines to above linter - http://sass-guidelin.es/#scss-lint
 - [x] Change Sass files to Scss file & Rename Folder
-- [ ] Add in base bower config with things like normalize.scss & modernizr.
+- [x] Add in base bower config with things like normalize.scss & modernizr.
 - [ ] Possibly add support for Sassdoc. - http://sassdoc.com/
+- [ ] Possibly add support for creating and pushing to github via api. - https://stackoverflow.com/questions/2423777/is-it-possible-to-create-a-remote-repo-on-github-from-the-cli-without-ssh/10325316#10325316 - https://gist.github.com/robwierzbowski/5430952
 
 ### Branch Guide
 sass-i-mean-scss-linting: This is the branch where I’m trying to add in scss linting per http://sass-guidelin.es/. I have stashed changes with the scss-lint npm package installed and inserted into sass.js for gulp but it keeps erroring out. Don’t know why. Do git stash apply to retreive changes.
