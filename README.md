@@ -23,7 +23,7 @@ alright already.
     $ bower install
     $ cd ../..
     $ gulp
-    $ subl
+    $ subl .
 
 ## brett’s rationale for creating this
 I wanted something minimal and something that allowed me to use partials. I thought about a static site generator like Jekyll but in the end it was way more than I wanted. I just wanted partials. So I ended up settling on Jade for that purpose.
