@@ -8,28 +8,33 @@ This combines [html5boilerplate](https://github.com/h5bp/html5-boilerplate), [ja
 alright already.
 
 ```
-git clone git@github.com:brettwise/jade-bower-h5bp-scss-linter-gulp-starter.git
-cd jade-bower-h5bp-scss-linter-gulp-starter
-bash run-me.sh
+    git clone git@github.com:brettwise/jade-bower-h5bp-scss-linter-gulp-starter.git
+    cd jade-bower-h5bp-scss-linter-gulp-starter
+    bash gogo-static-site.sh
 ```
 
 #### That bash script keeps you from having type all these.
 
 ```
-cd .. 
-mv jade-bower-h5bp-scss-linter-gulp-starter $sitename)
-divshot init (followed by 6 prompts)
-rm -rf .git
-git init
-git add -A
-git commit -m "Initial commit for $sitename"
-npm install
-cd src/sass
-bower install
-cd src/js
-bower install
-subl .
-gulp
+    cd .. 
+    mv jade-bower-h5bp-scss-linter-gulp-starter $sitename
+    divshot init // followed by 5 divshot prompts
+    name: (my-app-name)                                 
+    root directory: (current) public
+    clean urls: (y/n) y
+    error page: (error.html)
+    Would you like to create a Divshot.io app from this app?: (y/n) y
+    rm -rf .git
+    git init
+    git add -A
+    git commit -m "Initial commit for $sitename"
+    npm install
+    cd src/sass
+    bower install
+    cd src/js
+    bower install
+    subl .
+    gulp
 ```
 
 ## brett’s rationale for creating this
