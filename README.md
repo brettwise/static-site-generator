@@ -1,14 +1,29 @@
-H5BP/Jade/Sass Best Practices/gulp-starter
+H5BP/Jade/Bower/Sass Best Practices/gulp-starter
 ============
 
 # What is this?
-This combines [html5boilerplate](https://github.com/h5bp/html5-boilerplate), [jade](https://github.com/jadejs/jade)-[gulp](https://www.npmjs.com/package/gulp-jade) mostly for templating, and Sass linting from [sass-guidelin.es](http://sass-guidelin.es/#scss-lint). All a top of the wonderous [gulp-starter](https://github.com/greypants/gulp-starter) from someone called greypants. It takes the best of everything.
+This combines [html5boilerplate](https://github.com/h5bp/html5-boilerplate), [jade](https://github.com/jadejs/jade)-[gulp](https://www.npmjs.com/package/gulp-jade) mostly for templating, [Bower](https://github.com/bower/bower) and Sass linting from [sass-guidelin.es](http://sass-guidelin.es/#scss-lint). All a top of the wonderous [gulp-starter](https://github.com/greypants/gulp-starter) from someone called greypants. Pretty much... it takes the best of everything.
 
 ## tldr or just tell me how to get going with this damn thing.
 alright already.
 
+	$ git clone git@github.com:brettwise/jade-bower-h5bp-scss-linter-gulp-starter.git
+	$ cd jade-bower-h5bp-scss-linter-gulp-starter
+	$ bash run-me.sh
+
+#### That bash script keeps you from having type all these.
+
+	$ git clone git@github.com:brettwise/jade-bower-h5bp-scss-linter-gulp-starter.git
+	$ cd jade-bower-h5bp-scss-linter-gulp-starter
     $ npm install
+    $ cd src/sass
+    $ bower install
+    $ cd ..
+    $ cd js
+    $ bower install
+    $ cd ../..
     $ gulp
+    $ subl
 
 ## brett’s rationale for creating this
 I wanted something minimal and something that allowed me to use partials. I thought about a static site generator like Jekyll but in the end it was way more than I wanted. I just wanted partials. So I ended up settling on Jade for that purpose.

@@ -3,4 +3,5 @@
 npm install
 (cd src/sass;bower install)
 (cd src/js;bower install)
+subl .
 gulp
