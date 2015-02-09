@@ -1,8 +1,6 @@
-@import 'vendor/normalize-scss/normalize';
-@import 'utils/variables';
-@import 'utils/mixins';
-@import 'base/typography';
-@import 'layout/navigation';
-@import 'layout/footer';
-@import 'pages/index';
+@import 'vendor/manifest';
+@import 'utils/manifest';
+@import 'base/manifest';
+@import 'layout/manifest';
+@import 'pages/manifest';
 @import 'utils/shame';
