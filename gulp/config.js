@@ -10,10 +10,13 @@ module.exports = {
   },
   sass: {
     src: src + '/sass/*.{sass,scss}',
+    watchAll: src + '/sass/**/*.{sass,scss}',
     dest: dest + '/css',
     settings: {
       indentedSyntax: true, // Enable .sass syntax!
-      imagePath: 'images' // Used by the image-url helper
+      imagePath: 'images', // Used by the image-url helper
+      errLogToConsole: true,
+      sourceComments: 'normal'
     }
   },
   images: {
@@ -26,6 +29,7 @@ module.exports = {
   },
   jade: {
     src: src + '/htdocs/*.jade',
+    watchAll: src + '/htdocs/**/*.jade',
     dest: dest
   },
   iconFonts: {
