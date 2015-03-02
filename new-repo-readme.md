@@ -4,14 +4,14 @@
 
 From project root
 
-'''
+```
 	cd src/sass 
 	bower install
 	cd ../../js
 	bower install
 	cd ../..
 	npm install && gulp
-'''
+```
 
 Probably go get coffee while npm does it's thing.
 
@@ -20,6 +20,6 @@ Probably go get coffee while npm does it's thing.
 
 Assuming you shut down gulp and you're in project root...
 
-'''
+```
 	gulp
-'''
+```
