@@ -8,7 +8,7 @@ echo "Folder renamed."
 echo -ne '\n' 'build' '\n' 'y' '\n' '404.html' '\n' 'y' '\n' | divshot init
 echo "divshot site initialized"
 rm -rf .git
-echo "Git repo removed."
+echo "Old git repo removed."
 git init
 echo "New git repo initialized."
 git add -A
