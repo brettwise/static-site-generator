@@ -36,7 +36,7 @@ module.exports = {
     src: src + '/js/**/*.js',
     watchAll: src + '/js/**/*.js',
     dest: dest + '/js'
-  }
+  },
   iconFonts: {
     name: 'Gulp Starter Icons',
     src: src + '/icons/*.svg',
