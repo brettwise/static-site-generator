@@ -32,6 +32,11 @@ module.exports = {
     watchAll: src + '/htdocs/**/*.jade',
     dest: dest
   },
+  js: {
+    src: src + '/js/**/*.js',
+    watchAll: src + '/js/**/*.js',
+    dest: dest + '/js'
+  }
   iconFonts: {
     name: 'Gulp Starter Icons',
     src: src + '/icons/*.svg',
@@ -60,18 +65,6 @@ module.exports = {
       require: ['jquery', 'backbone/node_modules/underscore']
       // See https://github.com/greypants/gulp-starter/issues/87 for note about
       // why this is 'backbone/node_modules/underscore' and not 'underscore'
-    }, {
-      entries: src + '/js/main.js',
-      dest: dest + '/js',
-      outputName: 'main.js',
-      // list of externally available modules to exclude from the bundle
-      external: ['jquery', 'underscore']
-    }, {
-      entries: src + '/js/vendor/modernizr/modernizr.js',
-      dest: dest + '/js',
-      outputName: 'modernizr.js',
-      // list of externally available modules to exclude from the bundle
-      external: ['jquery', 'underscore']
     }]
   },
   production: {
