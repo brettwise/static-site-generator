@@ -5,3 +5,4 @@ Desktop.ini
 node_modules
 src/sass/vendor/*
 src/js/vendor/*
+divshot-debug.log
