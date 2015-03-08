@@ -10,7 +10,7 @@ alright already.
 ```
     git clone git@github.com:brettwise/jade-bower-h5bp-scss-linter-gulp-starter.git
     cd jade-bower-h5bp-scss-linter-gulp-starter
-    bash gogo-static-site.sh
+    bash gogo-static.sh
 ```
 
 #### That bash script keeps you from having type all these.
