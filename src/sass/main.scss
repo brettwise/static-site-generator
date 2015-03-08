@@ -1,6 +1,20 @@
-@import 'vendor-manifest';
-@import 'utils/manifest';
-@import 'base/manifest';
-@import 'layout/manifest';
-@import 'pages/manifest';
-@import 'utils/shame';
+@import 
+	'vendor/normalize-scss/normalize';
+	
+@import 
+	'utils/variables',
+	'utils/mixins',
+	'utils/shame';
+
+@import 
+	'base/typography';
+
+@import 
+	'components/navigation',
+	'components/footer';
+
+@import 
+	'pages/index';
+
+@import 
+	'utils/shame';
