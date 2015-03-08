@@ -8,8 +8,8 @@ This combines [html5boilerplate](https://github.com/h5bp/html5-boilerplate), [ja
 alright already.
 
 ```
-    git clone git@github.com:brettwise/jade-bower-h5bp-scss-linter-gulp-starter.git
-    cd jade-bower-h5bp-scss-linter-gulp-starter
+    git clone git@github.com:brettwise/static-site-generator.git
+    cd static-site-generator 
     bash gogo-static.sh
 ```
 
@@ -17,7 +17,7 @@ alright already.
 
 ```
     read sitename
-    (cd ..; mv jade-bower-h5bp-scss-linter-gulp-starter $sitename)
+    (cd ..; mv static-site-generator $sitename)
     echo -ne '\n' 'build' '\n' 'y' '\n' '404.html' '\n' 'y' '\n' | divshot init
     rm -rf .git
     git init
