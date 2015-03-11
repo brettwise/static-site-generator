@@ -25,8 +25,8 @@ rm README.md
 mv new-repo-readme.md README.md
 git add -A
 git commit -m "Removed readme from original static project's readme and moved new one to be default."
-git remote add origin git@github.com:brettwise/$sitename.git
-git push -u origin master
+git create -d "Home of $sitename."
+git push origin master
 npm install
 echo "npm packages installed."
 subl .
