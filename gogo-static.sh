@@ -3,7 +3,7 @@
 echo "Type the name of your site without the .com This will rename the folder you're in and be used in the first git commit:"
 read sitename
 echo "Cool hang tight. This might take a few seconds."
-(cd ..; mv jade-bower-h5bp-scss-linter-gulp-starter $sitename)
+(cd ..; mv static-site-generator $sitename)
 echo "Folder renamed."
 echo -ne '\n' 'build' '\n' 'y' '\n' '404.html' '\n' 'y' '\n' | divshot init
 echo "divshot site initialized"
