@@ -1,20 +1,13 @@
-@import 
-  'vendor/normalize-scss/normalize';
+@import 'vendor/normalize-scss/normalize';
     
-@import 
-  'utils/variables',
-  'utils/mixins',
-  'utils/shame';
+@import 'utils/variables';
+@import 'utils/mixins';
 
-@import 
-  'base/typography';
+@import 'base/typography';
 
-@import 
-  'components/navigation',
-  'components/footer';
+@import 'components/nav';
+@import 'components/footer';
 
-@import 
-  'pages/index';
+@import 'pages/index';
 
-@import 
-  'utils/shame';
+@import 'utils/shame';
