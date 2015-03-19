@@ -61,6 +61,7 @@
     "lodash": "^2.4.1",
     "pretty-hrtime": "~0.2.1",
     "require-dir": "^0.1.0",
+    "sassdoc": "^2.1.6",
     "vinyl-source-stream": "~0.1.1",
     "watchify": "^2.2.1"
   },
