@@ -1,10 +1,5 @@
 #!/bin/bash
-
-echo "Type the name of your site without the .com This will rename the folder you're in and be used in the first git commit:"
-read sitename
-echo "Cool hang tight. This might take a few seconds."
-(cd ..; mv static-site-generator $sitename)
-echo "Folder renamed."
+npm install gulp
 echo -ne '\n' 'build' '\n' 'y' '\n' '404.html' '\n' 'y' '\n' | divshot init
 echo "divshot site initialized"
 (cd src/sass;bower install)
@@ -24,8 +19,9 @@ git commit -m "Initial commit for $sitename"
 rm README.md
 mv new-repo-readme.md README.md
 git add -A
-git commit -m "Removed readme from original static project's readme and moved new one to be default."
-npm install
-echo "npm packages installed."
+git commit -m "Replaced readme about the static-site-generator with new project readme."
+hub create -d "Home of $sitename"
+git push --set-upstream origin master
+"Github repo created and pushed."
 subl .
 gulp
