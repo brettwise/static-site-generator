@@ -22,6 +22,6 @@ git add -A
 git commit -m "Replaced readme about the static-site-generator with new project readme."
 hub create -d "Home of $sitename"
 git push --set-upstream origin master
-"Github repo created and pushed."
+echo "Github repo created and pushed."
 subl .
 gulp
